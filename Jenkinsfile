@@ -27,7 +27,7 @@ pipeline {
             steps {
                 echo 'mv package '
                 sh 'mvn package -DskipTests'
-                archiveArtifacts artifacts 'target'
+                archiveArtifacts artifacts: 'target/*.jar'
             }
         }
     }
