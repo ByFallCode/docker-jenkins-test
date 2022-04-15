@@ -6,22 +6,26 @@ pipeline {
     stages {
         stage('Get maven version') {
             steps {
+                echo 'affichage version mvn'
                 sh 'mvn --version'
             }
         }
         stage('Maven clean') {
             steps {
+                echo 'mvn clean'
                 sh 'mvn clean'
             }
         }
         stage('Maven test') {
             steps {
+                echo 'mvn test'
                 sh 'mvn test'
             }
         }
         stage('Maven package') {
             steps {
-                sh 'mvn package'
+                echo 'mv package '
+                sh 'mvn package -DskipTests'
             }
         }
     }
