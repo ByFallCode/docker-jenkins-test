@@ -1,4 +1,4 @@
-package com.fall.demo;
+package com.example.demo;
 
 /**
  * Created by IntelliJ IDEA.

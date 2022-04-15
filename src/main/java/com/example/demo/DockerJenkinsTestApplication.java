@@ -1,13 +1,13 @@
-package com.fall.demo;
+package com.example.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DockerJenkinsApplication {
+public class DockerJenkinsTestApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DockerJenkinsApplication.class, args);
+        SpringApplication.run(DockerJenkinsTestApplication.class, args);
     }
 
 }
