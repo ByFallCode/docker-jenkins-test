@@ -37,7 +37,7 @@ class MyMathTest {
     @Test
     public void sum_with3numbers() {
         System.out.println("Test1");
-        assertEquals(7, myMath.sum(new int[] { 1, 2, 3 }));
+        assertEquals(6, myMath.sum(new int[] { 1, 2, 3 }));
     }
 
     @Test
