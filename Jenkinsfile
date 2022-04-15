@@ -20,14 +20,17 @@ pipeline {
             steps {
                 echo 'mvn test'
                 sh 'mvn test'
-                junit 'target/surefire-reports'
             }
         }
         stage('Maven package') {
             steps {
                 echo 'mv package '
                 sh 'mvn package -DskipTests'
-                archiveArtifacts artifacts: 'target/*.jar'
+            }
+            post {
+                always {
+                    archiveArtifacts artifacts: 'target/'
+                }
             }
         }
     }
